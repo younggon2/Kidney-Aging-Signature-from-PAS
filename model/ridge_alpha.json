@@ -1,0 +1,12 @@
+{
+ "alpha": 10000.0,
+ "alpha_grid": "logspace(-2, 4, 25)",
+ "n_components": 16,
+ "training_biopsies": 48,
+ "domains": [
+  "Domain_collecting_duct",
+  "Domain_tubulointerstitial",
+  "Domain_tubular_epithelial",
+  "Domain_glomerular_barrier"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "Domain_collecting_duct": {
+  "DKD": 0.10345507821750727,
+  "IgAN": 0.07624393486032283
+ },
+ "Domain_tubulointerstitial": {
+  "DKD": 0.056242648927672445,
+  "IgAN": 0.04411636674408375
+ },
+ "Domain_tubular_epithelial": {
+  "DKD": 0.07339283250390631,
+  "IgAN": 0.06098536348557427
+ },
+ "Domain_glomerular_barrier": {
+  "DKD": 0.03833017606726979,
+  "IgAN": 0.024329365464169295
+ }
+}

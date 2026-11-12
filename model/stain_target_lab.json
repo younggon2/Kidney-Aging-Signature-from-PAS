@@ -1,0 +1,9 @@
+{
+ "L_mean": 174.93475341796875,
+ "a_mean": 146.11782836914062,
+ "b_mean": 113.76939392089844,
+ "L_std": 25.91925811767578,
+ "a_std": 5.911953926086426,
+ "b_std": 4.8505167961120605,
+ "note": "OpenCV L*a*b* (8-bit scale); statistics from tissue pixels only (pixels with R,G,B all > 200 treated as background)"
+}
