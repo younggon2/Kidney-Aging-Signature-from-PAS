@@ -24,11 +24,11 @@ those scores from a routine periodic acid–Schiff (PAS) slide.
 | Targets | The four compartment scores, centred within disease group (DKD, IgA nephropathy) inside each training fold |
 | Validation | Patient-grouped 5-fold cross-validation repeated 20 times; each training biopsy's estimate is the mean of its 20 out-of-fold estimates |
 
-Only the PCA and the ridge regression are fitted. The foundation model is a fixed feature
+Only the feature scaler, the PCA and the ridge regression are fitted. The foundation model is a fixed feature
 extractor. Training used 48 biopsies (24 DKD, 24 IgA nephropathy) from the first staining batch;
 three additional DKD biopsies from a second staining batch were scored with the model fitted to
 all 48 after a constant feature shift that aligned the two batches (mean of IgA nephropathy
-biopsies in the training batch minus their mean in the new batch; `model/batch2_feature_shift.npy`).
+biopsies in the training batch minus their mean in the new batch; `model/batch2_feature_shift.csv`).
 
 ## Contents
 
