@@ -22,13 +22,13 @@ ALPHAS = np.logspace(-2, 4, 25)
 
 
 def disease_of(biopsy_id):
-    """Leading letters of the identifier (e.g. 'DKD12' -> 'DKD')."""
+    """Leading letters of the identifier, used as the disease group (e.g. 'ABC07' -> 'ABC')."""
     m = re.match(r"^([A-Za-z]+)", str(biopsy_id))
     return m.group(1) if m else str(biopsy_id)
 
 
 def patient_key(biopsy_id):
-    """Disease prefix + first number; a section suffix such as '_2' is dropped so that
+    """Letters + first number of the identifier (e.g. 'ABC07' and 'ABC07_2' -> 'ABC07'), so that
     two sections of one patient never fall into different folds."""
     m = re.match(r"^([A-Za-z]+)(\d+)", str(biopsy_id))
     return (m.group(1) + m.group(2)) if m else re.sub(r"[^A-Za-z0-9]", "", str(biopsy_id))
