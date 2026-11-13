@@ -29,6 +29,9 @@ extractor. Training used 48 biopsies (24 DKD, 24 IgA nephropathy) from the first
 three additional DKD biopsies from a second staining batch were scored with the model fitted to
 all 48 after a constant feature shift that aligned the two batches (mean of IgA nephropathy
 biopsies in the training batch minus their mean in the new batch; `model/batch2_feature_shift.csv`).
+The penalty selected for the model fitted to all 48 biopsies is 10,000, the largest value of the
+grid; extending the grid to 10⁶ or 10⁸ selects the same value and leaves the cross-validated
+results unchanged (mean Spearman 0.619 vs 0.621).
 
 ## Contents
 
